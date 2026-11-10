@@ -1,18 +1,34 @@
+
 import type { Metadata, Viewport } from "next"
 import { Inter } from "next/font/google"
+import { GoogleAnalytics } from "@next/third-parties/google"
 import { SiteHeader } from "@/components/site-header"
 import { SiteFooter } from "@/components/site-footer"
 import "./globals.css"
 
-const inter = Inter({ subsets: ["latin"], variable: "--font-inter", display: "swap" })
+const inter = Inter({
+  subsets: ["latin"],
+  variable: "--font-inter",
+  display: "swap",
+})
 
 export const metadata: Metadata = {
   title: {
     default: "Carawin Technologies | Future-Ready Education & AI Technology",
     template: "%s | Carawin",
   },
-  description: "Carawin is building the intelligence and digital infrastructure for the future of education through AI, software, smart infrastructure, data and human capability.",
-  keywords: ["Carawin", "education technology", "AI in education", "digital education", "smart classroom", "education infrastructure", "AI teacher", "adaptive learning"],
+  description:
+    "Carawin is building the intelligence and digital infrastructure for the future of education through AI, software, smart infrastructure, data and human capability.",
+  keywords: [
+    "Carawin",
+    "education technology",
+    "AI in education",
+    "digital education",
+    "smart classroom",
+    "education infrastructure",
+    "AI teacher",
+    "adaptive learning",
+  ],
   icons: {
     icon: [
       { url: "/favicon.ico", sizes: "any" },
@@ -27,7 +43,11 @@ export const viewport: Viewport = {
   themeColor: "#ffffff",
 }
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode
+}) {
   return (
     <html lang="en">
       <body className={`${inter.variable} font-sans`}>
@@ -36,6 +56,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <main>{children}</main>
           <SiteFooter />
         </div>
+
+        {/* Google Analytics 4 */}
+        <GoogleAnalytics
+          gaId={process.env.NEXT_PUBLIC_GA_ID!}
+        />
       </body>
     </html>
   )
