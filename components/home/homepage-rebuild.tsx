@@ -18,6 +18,10 @@ import {
   BarChart3,
   FlaskConical,
   LayoutDashboard,
+  Wallet,
+PiggyBank,
+CreditCard,
+Settings,
 } from "lucide-react"
 
 
@@ -573,9 +577,9 @@ className="stat-reveal-item min-w-0 py-5 sm:py-6 lg:py-7"
           style={{ transitionDelay: `${index * 110}ms` }}
         >
           <span
-            className={`block text-3xl font-black tracking-[-0.05em] sm:text-4xl lg:text-5xl xl:text-[3.2rem] ${
-              st.highlight ? "text-[#F1264B]" : "text-white"
-            }`}
+            className={`block text-3xl font-black tracking-[-0.05em] sm:text-4xl lg:text-5xl ${
+  st.highlight ? "text-[#F1264B]" : "text-white"
+}`}
           >
             {st.value}
           </span>
@@ -1137,6 +1141,261 @@ className="stat-reveal-item min-w-0 py-5 sm:py-6 lg:py-7"
   <div className="absolute inset-x-0 bottom-0 z-20 h-[2px] bg-gradient-to-r from-[#1769d2] via-[#8190db] to-[#e11d48]" />
 </section>
 
+
+
+
+
+{/* ========================================================
+    LEARNING BEYOND THE CLASSROOM
+    Financial Literacy + Teacher Capability Building
+    ======================================================== */}
+<section className="relative isolate overflow-hidden border-b border-slate-200 bg-[#f8faff] py-14 sm:py-16 lg:py-20">
+
+  {/* Soft background atmosphere */}
+  <div className="pointer-events-none absolute inset-0 -z-10 overflow-hidden">
+    <div className="absolute -right-40 -top-24 h-96 w-96 rounded-full bg-blue-100/50 blur-[110px]" />
+    <div className="absolute -left-40 bottom-0 h-80 w-80 rounded-full bg-rose-100/40 blur-[110px]" />
+  </div>
+
+<div className="mx-auto w-full max-w-none px-5 sm:px-8 lg:px-[2.2vw]">
+    {/* HEADER */}
+    <div className="grid items-center gap-5 lg:grid-cols-[1fr_0.85fr] lg:gap-12">
+
+      <div>
+        <Reveal>
+          <div className="flex items-center gap-3">
+            <span className="h-[3px] w-8 rounded-full bg-gradient-to-r from-[#1769d2] to-[#e11d48]" />
+            <p className="font-mono text-[10px] font-bold uppercase tracking-[0.2em] text-[#1769d2] sm:text-xs">
+              LEARNING BEYOND THE CLASSROOM
+            </p>
+          </div>
+        </Reveal>
+
+        <Reveal delay={0.08} y={20}>
+          <h2 className="mt-5 text-4xl font-black leading-[0.98] tracking-[-0.065em] text-[#08284d] sm:text-5xl lg:text-6xl">
+            BUILDING SKILLS
+            <br />
+            <span className="bg-gradient-to-r from-[#1769d2] via-[#6960d5] to-[#e11d48] bg-clip-text text-transparent">
+              BEYOND THE CLASSROOM.
+            </span>
+          </h2>
+        </Reveal>
+      </div>
+
+      <Reveal delay={0.15} y={16}>
+        <div className="border-l-2 border-[#1769d2]/30 pl-5 lg:ml-auto lg:max-w-lg">
+          <p className="text-sm font-medium leading-7 text-[#334b6d] sm:text-base lg:text-lg">
+            Practical financial knowledge for students.
+            Stronger teaching capabilities for educators.
+          </p>
+        </div>
+      </Reveal>
+
+    </div>
+
+    {/* TWO PROGRAMME CARDS */}
+<div className="mt-9 grid gap-5 lg:mt-12 lg:grid-cols-2 lg:gap-7">
+      {/* ==========================================
+          FINANCIAL LITERACY FOR STUDENTS
+          ========================================== */}
+      <Reveal delay={0.08} y={22}>
+        <article className="group relative flex h-full flex-col overflow-hidden rounded-[22px] border border-blue-100 bg-white shadow-[0_12px_35px_rgba(8,40,77,.045)] transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_20px_45px_rgba(23,105,210,.10)] sm:flex-row">
+
+          {/* Image */}
+          <div className="relative aspect-[5/4] w-full shrink-0 overflow-hidden sm:aspect-auto sm:w-[48%]">
+            <Image
+              src="/images/home/Students Exploring Financial Literacy.png"
+              alt="Students exploring financial literacy through a collaborative savings activity"
+              fill
+              sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 23vw"
+              className="object-cover transition-transform duration-700 group-hover:scale-[1.04]"
+            />
+
+            <div className="absolute inset-0 bg-gradient-to-t from-[#08284d]/20 to-transparent" />
+
+            <span className="absolute left-4 top-4 rounded-full border border-white/60 bg-white/95 px-3 py-1.5 font-mono text-[9px] font-bold uppercase tracking-[0.15em] text-[#1769d2] shadow-sm">
+              FOR STUDENTS
+            </span>
+          </div>
+
+          {/* Content */}
+          <div className="relative flex min-w-0 flex-1 flex-col justify-center p-5 sm:p-5 lg:p-6 xl:p-7">
+
+            <div className="flex items-center gap-2.5">
+              <span className="grid h-10 w-10 shrink-0 place-items-center rounded-xl bg-blue-50 text-[#1769d2]">
+                <BookOpen size={21} strokeWidth={1.8} />
+              </span>
+
+              <span className="font-mono text-[9px] font-bold uppercase tracking-[0.15em] text-[#1769d2]">
+                FINANCIAL EDUCATION
+              </span>
+            </div>
+
+            <h3 className="mt-5 text-2xl font-black leading-[1.05] tracking-[-0.045em] text-[#08284d] xl:text-[2rem]">
+              Financial
+              <br />
+              Literacy
+              <span className="text-[#1769d2]">.</span>
+            </h3>
+
+            <p className="mt-3 text-xs leading-6 text-slate-600 sm:text-sm">
+              Building real-world money skills and responsible financial habits.
+            </p>
+
+            {/* Feature highlights */}
+            <div className="mt-5 grid grid-cols-2 gap-x-2 gap-y-4 border-t border-blue-50 pt-5">
+
+              <div className="flex min-w-0 items-center gap-2">
+                <span className="grid h-8 w-8 shrink-0 place-items-center rounded-lg bg-blue-50 text-[#1769d2]">
+                  <Wallet size={16} />
+                </span>
+                <span className="text-[10px] font-semibold leading-4 text-[#334b6d] sm:text-[11px]">
+                  Money Management
+                </span>
+              </div>
+
+              <div className="flex min-w-0 items-center gap-2">
+                <span className="grid h-8 w-8 shrink-0 place-items-center rounded-lg bg-blue-50 text-[#1769d2]">
+                  <PiggyBank size={16} />
+                </span>
+                <span className="text-[10px] font-semibold leading-4 text-[#334b6d] sm:text-[11px]">
+                  Saving & Budgeting
+                </span>
+              </div>
+
+              <div className="flex min-w-0 items-center gap-2">
+                <span className="grid h-8 w-8 shrink-0 place-items-center rounded-lg bg-blue-50 text-[#1769d2]">
+                  <CreditCard size={16} />
+                </span>
+                <span className="text-[10px] font-semibold leading-4 text-[#334b6d] sm:text-[11px]">
+                  Responsible Spending
+                </span>
+              </div>
+
+              <div className="flex min-w-0 items-center gap-2">
+                <span className="grid h-8 w-8 shrink-0 place-items-center rounded-lg bg-blue-50 text-[#1769d2]">
+                  <BarChart3 size={16} />
+                </span>
+                <span className="text-[10px] font-semibold leading-4 text-[#334b6d] sm:text-[11px]">
+                  Informed Decisions
+                </span>
+              </div>
+
+            </div>
+          </div>
+
+          <div className="absolute inset-x-0 bottom-0 h-[3px] origin-left scale-x-50 bg-gradient-to-r from-[#1769d2] to-[#60a5fa] transition-transform duration-500 group-hover:scale-x-100" />
+
+        </article>
+      </Reveal>
+
+      {/* ==========================================
+          TEACHER CAPABILITY BUILDING
+          ========================================== */}
+      <Reveal delay={0.16} y={22}>
+        <article className="group relative flex h-full flex-col overflow-hidden rounded-[22px] border border-rose-100 bg-white shadow-[0_12px_35px_rgba(8,40,77,.045)] transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_20px_45px_rgba(225,29,72,.09)] sm:flex-row">
+
+          {/* Image */}
+          <div className="relative aspect-[5/4] w-full shrink-0 overflow-hidden sm:aspect-auto sm:w-[46%]">
+            <Image
+              src="/images/home/Teacher Capability Building Workshop.png"
+              alt="Educators participating in a professional development workshop"
+              fill
+              sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 23vw"
+              className="object-cover transition-transform duration-700 group-hover:scale-[1.04]"
+            />
+
+            <div className="absolute inset-0 bg-gradient-to-t from-[#08284d]/20 to-transparent" />
+
+            <span className="absolute left-4 top-4 rounded-full border border-white/60 bg-white/95 px-3 py-1.5 font-mono text-[9px] font-bold uppercase tracking-[0.15em] text-[#b5122b] shadow-sm">
+              FOR EDUCATORS
+            </span>
+          </div>
+
+          {/* Content */}
+          <div className="relative flex min-w-0 flex-1 flex-col justify-center p-5 sm:p-5 lg:p-6 xl:p-7">
+
+            <div className="flex items-center gap-2.5">
+              <span className="grid h-10 w-10 shrink-0 place-items-center rounded-xl bg-rose-50 text-[#e11d48]">
+                <GraduationCap size={22} strokeWidth={1.8} />
+              </span>
+
+              <span className="font-mono text-[9px] font-bold uppercase tracking-[0.15em] text-[#b5122b]">
+                EDUCATOR DEVELOPMENT
+              </span>
+            </div>
+
+            <h3 className="mt-5 text-2xl font-black leading-[1.05] tracking-[-0.045em] text-[#08284d] xl:text-[2rem]">
+              Teacher
+              <br />
+              Capability
+              <br />
+              Building<span className="text-[#e11d48]">.</span>
+            </h3>
+
+            <p className="mt-3 text-xs leading-6 text-slate-600 sm:text-sm">
+              Empowering educators with modern, practical teaching skills.
+            </p>
+
+            {/* Feature highlights */}
+            <div className="mt-5 grid grid-cols-2 gap-x-2 gap-y-4 border-t border-rose-50 pt-5">
+
+              <div className="flex min-w-0 items-center gap-2">
+                <span className="grid h-8 w-8 shrink-0 place-items-center rounded-lg bg-rose-50 text-[#e11d48]">
+                  <UsersRound size={16} />
+                </span>
+                <span className="text-[10px] font-semibold leading-4 text-[#334b6d] sm:text-[11px]">
+                  Professional Development
+                </span>
+              </div>
+
+              <div className="flex min-w-0 items-center gap-2">
+                <span className="grid h-8 w-8 shrink-0 place-items-center rounded-lg bg-rose-50 text-[#e11d48]">
+                  <Laptop size={16} />
+                </span>
+                <span className="text-[10px] font-semibold leading-4 text-[#334b6d] sm:text-[11px]">
+                  Digital Teaching
+                </span>
+              </div>
+
+              <div className="flex min-w-0 items-center gap-2">
+                <span className="grid h-8 w-8 shrink-0 place-items-center rounded-lg bg-rose-50 text-[#e11d48]">
+                  <Lightbulb size={16} />
+                </span>
+                <span className="text-[10px] font-semibold leading-4 text-[#334b6d] sm:text-[11px]">
+                  Experiential Learning
+                </span>
+              </div>
+
+              <div className="flex min-w-0 items-center gap-2">
+                <span className="grid h-8 w-8 shrink-0 place-items-center rounded-lg bg-rose-50 text-[#e11d48]">
+                  <Settings size={16} />
+                </span>
+                <span className="text-[10px] font-semibold leading-4 text-[#334b6d] sm:text-[11px]">
+                  Technology Integration
+                </span>
+              </div>
+
+            </div>
+          </div>
+
+          <div className="absolute inset-x-0 bottom-0 h-[3px] origin-left scale-x-50 bg-gradient-to-r from-[#e11d48] to-[#fb7185] transition-transform duration-500 group-hover:scale-x-100" />
+
+        </article>
+      </Reveal>
+
+    </div>
+
+  </div>
+</section>
+
+
+
+
+
+
+
+
 {/* ========================================================
     OUR PRODUCTS & LABS — PREMIUM RESPONSIVE SHOWCASE
     Desktop: five image cards, no navigation arrows
@@ -1144,7 +1403,7 @@ className="stat-reveal-item min-w-0 py-5 sm:py-6 lg:py-7"
     ======================================================== */}
 <section
   id="products-labs"
-  className="relative isolate overflow-hidden border-b border-slate-200 bg-white py-14 sm:py-16 lg:py-20"
+  className="relative isolate overflow-hidden border-b border-slate-200 bg-white py-12 sm:py-14 lg:py-16"
 >
   {/* Subtle background atmosphere */}
   <div
